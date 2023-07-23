@@ -1,0 +1,182 @@
+#wrap {
+  .main {
+    .merchandise_btns {
+      ul {
+        padding: 0 1.5rem;
+        display: flex;
+        text-align: center;
+        li {
+          width: 100%;
+          border-bottom: 0.1rem solid #deddd9;
+          a {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            font-size: 0.9rem;
+            padding: 1rem 0rem;
+          }
+
+          &.btnOn {
+            a {
+              &::after {
+                content: '';
+                position: absolute;
+                display: block;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 0.3rem;
+                background-color: $KB-Yellow;
+              }
+            }
+          }
+          &.btnOff {
+            a {&::after {content: none;}}
+          }
+        }
+      }
+    }
+
+    .popularContents {
+      padding: 0 1.5rem;
+      .merchandise_list {
+        .listContents {
+          &.listOn {display: block;}
+          &.listOff {display: none;}
+        }
+      }
+
+      .popular_silder {
+        margin: 1.5rem 0;
+        padding-bottom: 10rem;
+        .comment {
+          text-align: center;
+          font-size: 1rem;
+          font-weight: bold;
+          line-height: 1.5rem;
+
+          b{
+            line-height: 0.8rem;
+            color: $KB-Orange;
+          }
+        }
+
+        .swiper-wrapper {
+          .swiper-slide {
+            width: 100%;
+            margin-top: 0.5rem;
+            border: 0.1rem solid #d4d0cd;
+            &.swiper-slide1 {
+              background-color: #fcf5ea;
+              a {
+                .slide_top {
+                  span {background-color: #fe8750;}
+                }
+
+                &:after {
+                  background: {
+                    image: url('../img/Popurality_bannerIcon.png');
+                    repeat: no-repeat;
+                    size: 16rem;
+                    position: 0.5rem -1rem;
+                  }
+                }
+              }
+            }
+            &.swiper-slide2 {
+              background-color: #dfecf5;
+              a {
+                .slide_top {
+                  span {background-color: #1b6ae5;}
+                }
+                &:after {
+                  background: {
+                    image: url('../img/Popurality_bannerIcon.png');
+                    repeat: no-repeat;
+                    size: 16rem;
+                    position: -8.5rem -1rem;
+                  }
+                }
+              }
+            }
+
+            a {
+              position: relative;
+              display: inline-block;
+              width: 100%;
+              height: 100%;
+              height: 100%;
+              padding: 1.5rem 0.8rem;
+              .slide_top {
+                margin-bottom: 2rem;
+
+                span {
+                  font-size: 0.8rem;
+                  padding: 0.2rem;
+                  color: #fff;
+                }
+
+                p {
+                  font-size: 0.9rem;
+                  color: #666;
+                  margin: 0.8rem 3.5rem 0 0;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis;
+                }
+
+                .slide_title {
+                  font-size: 1.1rem;
+                  font-weight: bold;
+                  color: #000;
+                  margin-top: 0.3rem;
+                  letter-spacing: 0.1rem;
+                }
+              }
+              .slide_bottom {
+                p {
+                  &:nth-child(1) {
+                    font-size: 0.8rem;
+                    color: #666;
+                  }
+
+                  &:nth-child(2) {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    color: $KB-Orange;
+                    margin: 0.2rem 0;
+                  }
+
+                  &:nth-child(3) {
+                    font-size: 0.7rem;
+                    color: #999;
+                  }
+                }
+              }
+
+              &:after {
+                content: '';
+                position: absolute;
+                top: 2.5rem;
+                right: 0;
+                width: 7rem;
+                height: 7rem;
+              }
+            }
+          }
+        }
+        .swiper-controller {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          margin: 1rem auto 0;
+          padding-top: 1.5rem;
+          width: 40%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

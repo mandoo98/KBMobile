@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>국민은행(모바일웹앱)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/setting/jquery-3.6.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/setting/prefixfree.min.js"></script>
+    <script defer src="js/scrollEvent.js"></script>
+    <script defer src="js/mainPage/mainSlider.js"></script>
+    <script defer src="js/mainPage/btnEvent.js"></script>
+    <script defer src="js/mainPage/toggleBtn.js"></script>
+    <script defer src="js/togglePage/dropMenu.js"></script>
+    <script defer src="js/togglePage/tabMenu.js"></script>
+    <script defer src="js/mainPage/newNotice.js"></script>
+</head>
+<body>
+    <div id="wrap">
+        <header>
+            <h1><span></span></h1>
+            <div class="toggleBtn"><a href="#"></a></div>
+        </header>
+
+        <div class="togglePage">
+            <div class="pageHead">
+                <div class="headTop">
+                    <h1><a href="#">로그인</a></h1>
+                    <div class="toggleClose"><a href="#"></a></div>
+                </div>
+                <div class="headMiddle">
+                    <p>쉽고 빠르고 안전한</p>
+                    <p>KB국민은행을 만나보세요.</p>
+                </div>
+                <div class="headBottom">
+                    <ul>
+                        <li><a href="#">지점찾기</a></li>
+                        <li><a href="#">KB SNS</a></li>
+                        <li><a href="#">KB 디지털 BOX</a></li>
+                    </ul>
+                </div>
+              </div>
+              <div class="pageBody">
+                <ul class="pageList">
+                    <li><a href="#" class="on">개인뱅킹</a></li>
+                    <li><a href="#">금융상품</a></li>
+                    <li><a href="#">인증안내</a></li>
+                    <li><a href="#">KB Life</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="eventPage.html">이벤트</a></li>
+                </ul>
+                <ul class="pageContents">
+                    <li><h1>개인뱅킹</h1></li>
+                    <li class="drop">
+                        <a href="#">계좌조회</a>
+                        <ul class="subCon">
+                            <li><a href="#">예금/신탁계좌조회</a></li>
+                            <li><a href="#">펀드계좌조회</a></li>
+                            <li><a href="#">대출계좌조회</a></li>
+                            <li><a href="#">외환계좌조회</a></li>
+                            <li><a href="#">보험계좌조회</a></li>
+                            <li><a href="#">퇴직연금계좌조회</a></li>
+                            <li><a href="#">골드계좌조회</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">거래내역조회</a></li>
+                    <li><a href="#">자기앞수표 조회</a></li>
+                    <li><a href="#">환율조회</a></li>
+                    <li class="drop">
+                        <a href="#">골드바 조회</a>
+                        <ul class="subCon">
+                            <li><a href="#">골드바 안내</a></li>
+                            <li><a href="#">골드바 일자별 가격조회</a></li>
+                            <li><a href="#">골드바 기간별 가격조회</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">간편 은퇴설계</a></li>
+                </ul>
+                <ul class="pageContents off">
+                    <li><h1>금융상품</h1></li>
+                    <li><a href="#">인기상품</a></li>
+                    <li><a href="#">예금상품</a></li>
+                    <li><a href="#">펀드상품</a></li>
+                    <li><a href="#">대출상품</a></li>
+                    <li><a href="#">신탁상품</a></li>
+                    <li><a href="#">보험/공제</a></li>
+                </ul>
+                <ul class="pageContents off">
+                    <li><h1>인증안내</h1></li>
+                    <li><a href="#">KB국민인증서 안내</a></li>
+                    <li><a href="#">제휴 문의하러 가기</a></li>
+                    <li><a href="#">은행 방문없이 공동인증서 발급</a></li>
+                </ul>
+                <ul class="pageContents off">
+                    <li><h1>KB Life</h1></li>
+                    <li><a href="#">새소식</a></li>
+                    <li><a href="#">신상품</a></li>
+                    <li><a href="#">GOLD&WISE</a></li>
+                    <li><a href="#">여의도5번출구</a></li>
+                    <li><a href="#">KB SNS</a></li>
+                    <li><a href="#">KB스타클럽</a></li>
+                    <li><a href="#">KB스타드림서비스</a></li>
+                </ul>
+                <ul class="pageContents off">
+                    <li><h1>고객센터</h1></li>
+                    <li><a href="#">고객센터 이용안내</a></li>
+                    <li><a href="#">이용시간 안내</a></li>
+                    <li class="drop">
+                        <a href="#">사고신고</a>
+                        <ul class="subCon">
+                            <li><a href="#">통장/인감</a></li>
+                            <li><a href="#">현금/직불카드</a></li>
+                            <li><a href="#">보안카드/OTP</a></li>
+                        </ul>
+                    </li>
+                    <li class="drop">
+                        <a href="#">사고신고 내역조회</a>
+                        <ul class="subCon">
+                            <li><a href="#">통장/인감/현금/직불</a></li>
+                            <li><a href="#">인터넷/폰/모바일뱅킹</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">ARS 사고신고 안내</a></li>
+                    <li><a href="#">ID조회/사용자암호 재설정</a></li>
+                    <li><a href="#">위치기반서비스 이용 동의/해제</a></li>
+                    <li><a href="#">방문판매 직원조회</a></li>
+                </ul>
+              </div>
+        </div>
+
+        <div class="main">
+            <div class="swiper main_slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide swiper-slide1"><a href="#"><img src="img/mainBanner1.png" alt="전국 거점지역 72개 지점 영업시간 연장"></a></div>
+                  <div class="swiper-slide swiper-slide2"><a href="#"><img src="img/mainBanner2.jpg" alt="KB 매직카 대출"></a></div>
+                  <div class="swiper-slide swiper-slide3"><a href="#"><img src="img/mainBanner3.png" alt="전문가 상시채용 공고"></a></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div class="btns">
+                <a href="#" class="on menuBtn">금융상품</a>
+                <a href="#exchange" class="exchangeBtn">오늘의 환율</a>
+                <a href="#new_notice" class="noticeBtn">새 소식</a>
+            </div>
+
+            <div id="mainMenu" class="mainMenu">
+                <div class="menus">
+                    <ul>
+                        <li class="ico1"><a href="#">인기</a></li>
+                        <li class="ico2"><a href="#">예금</a></li>
+                        <li class="ico3"><a href="#">펀드</a></li>
+                        <li class="ico4"><a href="#">대출</a></li>
+                        <li class="ico5"><a href="#">신탁</a></li>
+                        <li class="ico6"><a href="#">보험/공제</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="app">
+                <div class="app_title">
+                    <h1>KB 디지털 BOX</h1>
+                    <span><a href="#">더 보기</a></span>
+                </div>
+                <div class="app_list">
+                    <ul>
+                        <li class="app1">
+                            <a href="https://play.google.com/store/apps/details?id=com.kbstar.kbbank">
+                                <div class="appImg1"></div>
+                                <p>KB스타뱅킹</p>
+                            </a>
+                        </li>
+                        <li class="app2">
+                            <a href="https://play.google.com/store/apps/details?id=com.kbstar.reboot">
+                                <div class="appImg2"></div>
+                                <p>리브 Next</p>
+                            </a>
+                        </li>
+                        <li class="app3">
+                            <a href="https://play.google.com/store/apps/details?id=com.kbstar.land">
+                                <div class="appImg3"></div>
+                                <p>KB부동산</p>
+                            </a>
+                        </li>
+                        <li class="app4">
+                            <a href="https://play.google.com/store/apps/details?id=com.kbstar.kbbiz">
+                                <div class="appImg4"></div>
+                                <p>KB스타기업뱅킹</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="searchStore">
+                <a href="#">
+                    <h1>지점찾기</h1>
+                    <span>가까운 지점을 찾아보세요.</span>
+                </a>
+            </div>
+
+            <div id="exchange" class="exchange">
+                <div class="ex_title">
+                    <h1><a href="#">오늘의 환율</a></h1>
+                    <time datetime="2023.06.08 17:17:50">2023.06.08 17:17:50</time>
+                </div>
+                <div class="exchange_rate">
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <div class="exImg1"></div>
+                                <span>USD</span>
+                                <strong>1,327.32</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="exImg2"></div>
+                                <span>JPY</span>
+                                <strong>948.76</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="exImg3"></div>
+                                <span>EUR</span>
+                                <strong>1,424.78</strong>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="exImg4"></div>
+                                <span>CNY</span>
+                                <strong>193.52</strong>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="new_notice" class="new_notice">
+                <div class="nn_title">
+                    <h1>새 소식</h1>
+                    <span><a href="#">더 보기</a></span>
+                </div>
+                <div class="notices">
+                    <ul>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="kb_sns">
+                <div class="sns_title">
+                    <h1>KB SNS</h1>
+                </div>
+                <div class="sns">
+                    <ul>
+                        <li>
+                            <a href="https://m.facebook.com/kbkookminbank">
+                                <p>페이스북</p>
+                                <p>팔로우하기</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/kbkookminbank/">
+                                <p>인스타그램</p>
+                                <p>팔로우하기</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <footer>
+                <div class="footer_title">
+                    <h1><a href="index.html"></a></h1>
+                  </div>
+                  <div class="footer_con">
+                    <ul class="top">
+                      <li><a href="#">KB Life</a></li>
+                      <li><a href="#">지점찾기</a></li>
+                      <li><a href="#">고객센터</a></li>
+                      <li><a href="#">PC 버전</a></li>
+                    </ul>
+                    <ul class="bottom">
+                      <li><a href="#">개인정보처리방침</a></li>
+                      <li><a href="#">신용정보 활용체제</a></li>
+                      <li><a href="#">위치기반서비스 이용약관</a></li>
+                    </ul>
+                  </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
